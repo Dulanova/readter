@@ -2,6 +2,9 @@
 
 import React, { useState } from 'react';
 import ReactMarkdown from 'react-markdown';
+// Import highlighter dan temanya
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 // Definisi tipe untuk template
 type Template = {
@@ -46,7 +49,7 @@ export default function ReadmeEditor() {
 
       <div className="flex flex-1 overflow-hidden">
         {/* SIDEBAR: Section Templates */}
-        <aside className="w-64 bg-black border-r p-4 overflow-y-auto">
+        <aside className="w-64 bg-slate-900 border-r p-4 overflow-y-auto">
           <h2 className="text-sm font-bold text-gray-400 uppercase mb-4 tracking-widest">Templates</h2>
           <div className="space-y-2">
             {TEMPLATES.map((t, index) => (
@@ -78,7 +81,29 @@ export default function ReadmeEditor() {
           {/* PREVIEW */}
           <div className="w-1/2 bg-white overflow-y-auto p-10 prose prose-blue max-w-none">
             {markdown ? (
-              <ReactMarkdown>{markdown}</ReactMarkdown>
+              <ReactMarkdown
+                components={{
+                  code({ node, inline, className, children, ...props }: any) {
+                    const match = /language-(\w+)/.exec(className || '');
+                    return !inline && match ? (
+                      <SyntaxHighlighter
+                        style={vscDarkPlus}
+                        language={match[1]}
+                        PreTag="div"
+                        {...props}
+                      >
+                        {String(children).replace(/\n$/, '')}
+                      </SyntaxHighlighter>
+                    ) : (
+                      <code className={className} {...props}>
+                        {children}
+                      </code>
+                    );
+                  },
+                }}
+              >
+                {markdown}
+              </ReactMarkdown>
             ) : (
               <div className="text-gray-300 flex items-center justify-center h-full italic">
                 Preview akan muncul di sini...
