@@ -1,85 +1,102 @@
-# 🌐 Koleksi Link Menarik 🚀  
-> Selamat datang di dunia penuh inspirasi, sumber belajar, dan alat keren!  
-> Di sini kamu bisa menemukan berbagai tautan bermanfaat untuk pengembangan diri, teknologi, desain, hingga hiburan 🎉  
+# 🚀 Readter (Simple README Builder)
+
+Readter adalah aplikasi berbasis web yang dirancang untuk membantu developer menyusun file `README.md` secara cepat dan interaktif. Dengan fitur *live preview* berbasis Markdown serta potongan template siap pakai, Anda dapat membuat dokumentasi proyek yang simple hanya dalam hitungan menit.
+
+Aplikasi ini dibangun menggunakan **Next.js 15 (App Router)**, **TypeScript**, dan **Tailwind CSS**.
 
 ---
 
-## 📚 Daftar Isi
-1. [💻 Teknologi & Pemrograman](#-teknologi--pemrograman)
-2. [🎨 Desain & Kreativitas](#-desain--kreativitas)
-3. [🧠 Pembelajaran & Produktivitas](#-pembelajaran--produktivitas)
-4. [🎧 Hiburan & Inspirasi](#-hiburan--inspirasi)
-5. [📬 Kontak & Komunitas](#-kontak--komunitas)
+## ✨ Fitur Utama
+
+* **⚡ Live Markdown Preview:** Lihat hasil akhir format Markdown Anda secara langsung (*real-time*) saat mengetik.
+* **📦 Template Sekali Klik:** Tambahkan bagian umum README (Header, Instalasi, Penggunaan, Kontribusi, Lisensi) secara instan lewat sidebar.
+* **🎨 Syntax Highlighting:** Dokumentasi kode di dalam preview otomatis berwarna rapi berkat integrasi `react-syntax-highlighter` (tema VS Code Dark Plus).
+* **💾 Unduh Instan:** Unduh hasil kerja Anda langsung menjadi file `README.md` ke komputer Anda.
+* **📱 Clean Layout:** Desain antarmuka dua kolom (Editor & Preview) yang bersih dan minimalis menggunakan Tailwind CSS.
 
 ---
 
-## 💻 Teknologi & Pemrograman  
-> “Code is like humor. When you have to explain it, it’s bad.” — Cory House  
+## 🛠️ Teknologi yang Digunakan
 
-🔗 **Koleksi Tautan:**
-- 🧠 [freeCodeCamp](https://www.freecodecamp.org) — Belajar coding gratis dengan proyek nyata!  
-- 🐍 [Python Docs](https://docs.python.org/3/) — Dokumentasi resmi Python.  
-- ⚙️ [Dev.to](https://dev.to) — Komunitas developer berbagi artikel keren.  
-- ☁️ [GitHub Trending](https://github.com/trending) — Repositori populer setiap hari.
+* **Framework:** Next.js 15 (App Router)
+* **Bahasa:** TypeScript
+* **Styling:** Tailwind CSS & @tailwindcss/typography (untuk preview markdown)
+* **Library Markdown:** `react-markdown` & `react-syntax-highlighter`
 
 ---
 
-## 🎨 Desain & Kreativitas  
-> “Design is intelligence made visible.” — Alina Wheeler  
+## 🚀 Cara Instalasi Secara Lokal
 
-🎨 **Inspirasi Desain:**
-- 🖌️ [Dribbble](https://dribbble.com) — Portofolio para desainer dunia.  
-- 🎨 [Behance](https://www.behance.net) — Showcase karya kreatif.  
-- 🧩 [Coolors](https://coolors.co) — Generator palet warna aesthetic.  
-- 🖍️ [Figma Community](https://www.figma.com/community/) — Template & komponen Figma siap pakai.
+Ikuti langkah-langkah berikut untuk menjalankan proyek Readter di komputer lokal Anda:
 
----
+### 1. Prasyarat
+Pastikan Anda sudah menginstal **Node.js** (versi 18.x atau yang terbaru disarankan) dan **npm** (atau yarn/pnpm).
 
-## 🧠 Pembelajaran & Produktivitas  
-> “The capacity to learn is a gift; the ability to learn is a skill.”  
+### 2. Kloning Repositori
+Buka terminal Anda dan jalankan perintah berikut:
+```bash
+git clone https://github.com/username-anda/readter.git
+cd readter
+```
 
-📘 **Belajar Online:**
-- 📚 [Coursera](https://www.coursera.org) — Kursus online dari universitas top dunia.  
-- 🧩 [Notion Templates](https://www.notion.so/templates) — Template produktivitas Notion.  
-- ⏳ [Pomofocus](https://pomofocus.io) — Timer Pomodoro interaktif untuk fokus.  
-- 🧠 [MindTools](https://www.mindtools.com) — Tips & strategi produktivitas kerja.
+### 3. Instal Dependensi
 
----
+Instal semua library yang dibutuhkan proyek ini (termasuk Tailwind, Markdown parser, dan compiler TypeScript):
 
-## 🎧 Hiburan & Inspirasi  
-> “Sometimes music is the only medicine the heart and soul need.”  
+```bash
+npm install
 
-🎵 **Rekomendasi:**
-- 🎧 [LoFi Girl YouTube](https://www.youtube.com/@LofiGirl) — Musik chill untuk belajar/koding.  
-- 📽️ [Kurzgesagt – In a Nutshell](https://www.youtube.com/@kurzgesagt) — Video sains dengan animasi menakjubkan.  
-- 📜 [Medium](https://medium.com) — Artikel inspirasional & ide-ide baru.  
-- 📚 [Goodreads](https://www.goodreads.com) — Temukan buku terbaik untuk dibaca selanjutnya.
+```
 
----
+### 4. Jalankan Server Pengembangan
 
-## 📬 Kontak & Komunitas  
-> Yuk, gabung & diskusi bareng komunitas hebat lainnya!  
+Setelah proses instalasi selesai, jalankan server lokal dengan perintah:
 
-🤝 **Terhubung Dengan Saya:**
-- 💼 [LinkedIn](https://www.linkedin.com/in/dulanova/)  
-- 🐦 [Twitter](https://x.com/acakadulan)  
-- 🌍 [Website Pribadi](https://dulanova.github.io/Dulanova/)  
-- 💌 [Email](mailto:acakadulan@gmail.com)
+```bash
+npm run dev
 
----
+```
 
-## 🏷️ Bonus  
-💡 **Badge Interaktif**  
-![GitHub followers](https://img.shields.io/github/followers/Dulanova?label=Follow&style=social)
-![GitHub stars](https://img.shields.io/github/stars/Dulanova?style=social)
-![Visits](https://komarev.com/ghpvc/?username=Dulanova&color=blue)
+### 5. Buka di Browser
+
+Buka browser favorit Anda dan akses alamat berikut:
+
+```text
+http://localhost:3000
+
+```
 
 ---
 
-## 🧩 Tentang Repo Ini
-README ini dibuat untuk mengumpulkan semua link keren di satu tempat — semacam **“link tree versi Markdown”** 🌱  
-Kamu bisa **fork**, **edit**, dan **tambahkan tautan favoritmu sendiri**!  
+## 📂 Struktur Proyek
+
+```text
+└── 📁readter
+    └── 📁app
+        ├── globals.css      # Konfigurasi Tailwind global
+        ├── layout.tsx       # Root layout & setup font (Geist)
+        ├── page.tsx         # Logika utama Editor, Sidebar, dan Preview
+    └── 📁public             # File aset statis (SVG/Icons)
+    ├── next.config.ts       # Konfigurasi Next.js
+    ├── tailwind.config.ts   # Konfigurasi tema Tailwind
+    └── package.json         # Daftar dependensi & script proyek
+
+```
 
 ---
 
-✨ _Selamat menjelajah, semoga setiap klik membawa inspirasi baru!_  
+## 🤝 Kontribusi
+
+Kontribusi selalu terbuka! Jika Anda ingin meningkatkan fitur, memperbaiki bug, atau mempercantik tampilan UI:
+
+1. Fork repositori ini.
+2. Buat branch fitur baru (`git checkout -b fitur/FiturKeren`).
+3. Commit perubahan Anda (`git commit -m 'Menambahkan fitur keren baru'`).
+4. Push ke branch tersebut (`git push origin fitur/FiturKeren`).
+5. Buat Pull Request (PR) baru.
+
+---
+
+## 📜 Lisensi
+
+Proyek ini didistribusikan di bawah **MIT License**. Lihat file `LICENSE` untuk informasi lebih lanjut.
