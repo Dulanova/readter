@@ -35,7 +35,7 @@ Pastikan Anda sudah menginstal **Node.js** (versi 18.x atau yang terbaru disaran
 ### 2. Kloning Repositori
 Buka terminal Anda dan jalankan perintah berikut:
 ```bash
-git clone https://github.com/username-anda/readter.git
+git clone https://github.com/dulanova/readter.git
 cd readter
 ```
 
