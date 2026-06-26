@@ -2,7 +2,7 @@
 
 Readter adalah aplikasi berbasis web yang dirancang untuk membantu developer menyusun file `README.md` secara cepat dan interaktif. Dengan fitur *live preview* berbasis Markdown serta potongan template siap pakai, Anda dapat membuat dokumentasi proyek yang simple hanya dalam hitungan menit.
 
-Aplikasi ini dibangun menggunakan **Next.js 9 (App Router)**, **TypeScript**, dan **Tailwind CSS**.
+Aplikasi ini dibangun menggunakan **Next.js (App Router)**, **TypeScript**, dan **Tailwind CSS**.
 
 ---
 
@@ -18,7 +18,7 @@ Aplikasi ini dibangun menggunakan **Next.js 9 (App Router)**, **TypeScript**, da
 
 ## 🛠️ Teknologi yang Digunakan
 
-* **Framework:** Next.js 9 (App Router)
+* **Framework:** Next.js (App Router)
 * **Bahasa:** TypeScript
 * **Styling:** Tailwind CSS & @tailwindcss/typography (untuk preview markdown)
 * **Library Markdown:** `react-markdown` & `react-syntax-highlighter`
